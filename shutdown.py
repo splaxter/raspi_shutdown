@@ -15,7 +15,7 @@ GPIO.setup(PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # define the shutdown function 
 
-def shutdown():
+def shutdown(channel):
     print("Shutting Down!")
     time.sleep(5)
     os.system("sudo shutdown -h now")
